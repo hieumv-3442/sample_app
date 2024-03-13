@@ -1,0 +1,12 @@
+<% provide :title, t("help.title") %>
+<div class="container">
+  <h1><%= t("help.heading") %></h1>
+  <p>
+    <%= t("help.description_1") %>
+    <a href="http://www.railstutorial.org/help"><%= t("help.help_page") %></a>.
+    <%= t("help.description_2") %>
+    <%= link_to "http://www.railstutorial.org/book" do %>
+      <em><%= t("help.book_name") %></em> <%= t("help.book") %>.
+    <% end %>
+  </p>
+</div>
