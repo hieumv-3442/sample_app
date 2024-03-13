@@ -1,0 +1,7 @@
+<% provide :title, t("help.title") %>
+<div class="container">
+  <h1><%= t("home.heading") %></h1>
+  <p>
+    <%= t("home.description", link: link_to(t("home.link"), "https://www.railstutorial.org/")).html_safe %>
+  </p>
+</div>

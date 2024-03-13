@@ -1,0 +1,16 @@
+vi:
+  language: "Ngôn ngữ"
+  vietnamese: "Tiếng Việt"
+  home:
+    title: "Trang chủ"
+    heading: "Ứng dụng mẫu"
+    description: "đây là trang cho ứng dụng mẫu %{link}"
+    link: "Hướng dẫn Ruby on Rails"
+  help:
+    title: "Trợ giúp"
+    heading: "Trợ giúp"
+    description_1: "Nhận trợ giúp về hướng dẫn Ruby on Rails tại"
+    help_page: "trang trợ giúp của Rails Tutorial"
+    description_2: "Để nhận trợ giúp về ứng dụng mẫu này, xem"
+    book_name: "Hướng dẫn Ruby on Rails"
+    book: "sách"
