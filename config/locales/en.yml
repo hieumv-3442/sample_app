@@ -15,3 +15,18 @@ en:
     description_2: "To get help on this sample app, see the"
     book_name: "Ruby on Rails Tutorial"
     book: "book"
+  zone:
+  title: "Time zone"
+  date: "Date"
+  product:
+    id: "ID"
+    name: "Product Name"
+    create_at: "Create At"
+    update_at: "Update At"
+    new: "New Product"
+    edit: "Edit Product"
+    show: "Show Product"
+    destroy: "Destroy Product"
+    title: "List Product"
+    option: "Option"
+    back_list: "Back to list"
