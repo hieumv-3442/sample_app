@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <%= t 'language' %>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="dropdown-item"><%= link_to "English", url_for(locale: "en"), class: "dropdown-item" %></li>
+            <li class="dropdown-item"><%= link_to "Vietnamese", url_for(locale: "vi"), class: "dropdown-item" %></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

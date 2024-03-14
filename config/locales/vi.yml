@@ -1,0 +1,31 @@
+vi:
+  language: "Ngôn ngữ"
+  vietnamese: "Tiếng Việt"
+  home:
+    title: "Trang chủ"
+    heading: "Ứng dụng mẫu"
+    description: "đây là trang cho ứng dụng mẫu %{link}"
+    link: "Hướng dẫn Ruby on Rails"
+  help:
+    title: "Trợ giúp"
+    heading: "Trợ giúp"
+    description_1: "Nhận trợ giúp về hướng dẫn Ruby on Rails tại"
+    help_page: "trang trợ giúp của Rails Tutorial"
+    description_2: "Để nhận trợ giúp về ứng dụng mẫu này, xem"
+    book_name: "Hướng dẫn Ruby on Rails"
+    book: "sách"
+  zone:
+    title: "Múi giờ"
+    date: "Thời gian"
+  product:
+    id: "Mã"
+    name: "Tên sản phẩm"
+    create_at: "Tạo lúc"
+    update_at: "Cập nhật lúc"
+    new: "Tạo sản phẩm mới"
+    edit: "Chỉnh sửa sản phẩm"
+    show: "Xem sản phẩm"
+    destroy: "Xóa sản phẩm"
+    title: "Danh sách sản phẩm"
+    option: "Tùy chọn"
+    back_list: "Quay lại danh sách"

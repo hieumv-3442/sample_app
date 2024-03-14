@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1><%= t("product.title") %></h1>
+
+<table id="products" class="table">
+  <tr>
+    <th><%= t("product.id") %></th>
+    <th><%= t("product.name") %></th>
+    <th><%= t("product.create_at") %></th>
+    <th><%= t("product.update_at") %></th>
+    <th><%= t("product.option") %></th>
+  </tr>
+  <%= render @products %>
+</table>
+
+<%= link_to t("product.new"), new_product_path %>
