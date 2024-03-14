@@ -12,6 +12,9 @@ gem "sprockets-rails"
 # gem bootstrap for Rails
 gem "bootstrap", "5.3.0"
 
+# use devise for authentication
+gem "bcrypt", "~> 3.1.7"
+
 # Use mysql as the database for Active Record
 gem "mysql2", "~> 0.5"
 
