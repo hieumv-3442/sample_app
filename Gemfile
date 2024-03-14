@@ -18,6 +18,9 @@ gem "mysql2", "~> 0.5"
 # rails -i18n
 gem "rails-i18n"
 
+# use bcrypt for password hashing
+gem 'bcrypt', '~> 3.1.7'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
@@ -72,6 +75,8 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
+
+gem "config"
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html]
