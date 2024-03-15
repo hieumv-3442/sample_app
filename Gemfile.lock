@@ -71,6 +71,7 @@ GEM
     ast (2.4.2)
     autoprefixer-rails (10.4.16.0)
       execjs (~> 2)
+    bcrypt (3.1.20)
     bindex (0.8.1)
     bootsnap (1.18.3)
       msgpack (~> 1.2)
@@ -89,11 +90,14 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     concurrent-ruby (1.2.3)
+    config (5.3.0)
+      deep_merge (~> 1.2, >= 1.2.1)
     crass (1.0.6)
     date (3.3.4)
     debug (1.9.1)
       irb (~> 1.10)
       reline (>= 0.3.8)
+    deep_merge (1.2.2)
     erubi (1.12.0)
     execjs (2.9.1)
     ffi (1.16.3)
@@ -126,7 +130,7 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.5)
-    minitest (5.22.2)
+    minitest (5.22.3)
     msgpack (1.7.2)
     mysql2 (0.5.6)
     net-imap (0.4.10)
@@ -268,9 +272,11 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap
   bootstrap (= 5.3.0)
   capybara
+  config
   debug
   importmap-rails
   jbuilder
@@ -293,4 +299,4 @@ RUBY VERSION
    ruby 3.0.6p216
 
 BUNDLED WITH
-   2.4.13
+   2.5.6
