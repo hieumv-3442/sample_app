@@ -2,3 +2,6 @@ max_length_name: 50
 max_length_email: 250
 min_length_password: 6
 valid_email_regex: \A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z
+gravatar:
+  size: 50
+valid_number_regex: \A\d+\z

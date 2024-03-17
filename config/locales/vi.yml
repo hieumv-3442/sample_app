@@ -29,3 +29,23 @@ vi:
     title: "Danh sách sản phẩm"
     option: "Tùy chọn"
     back_list: "Quay lại danh sách"
+  user:
+    title:
+      create: "Đăng ký"
+      show: "XEM NGƯỜI DÙNG"
+  flashes:
+    danger:
+      user_not_found: "Không tìm thấy người dùng"
+      form_notification: "Biểu mẫu chứa %{count} lỗi."
+      data_invalid: "Dữ liệu không hợp lệ"
+      user_id_valid: "ID phải là một số nguyên"
+    success:
+      welcome: "Chào mừng %{user_name} đến với Ứng dụng Mẫu!"
+  button:
+    create_user: "Tạo người dùng"
+  signup:
+    title: "Đăng ký"
+    name_field: "Tên người dùng"
+    email_field: "Email"
+    password_field: "Mật khẩu"
+    password_confirmation_field: "Xác nhận mật khẩu"
