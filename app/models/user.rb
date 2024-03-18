@@ -3,7 +3,7 @@ class User < ApplicationRecord
   validates :password, length: {minimum: Settings.min_length_password}
   validates :email, presence: true, length: {maximum: Settings.max_length_email},
             uniqueness: true,
-            format: {with: Regexp.new(Settings.min_length_password, "i")}
+            format: {with: Regexp.new(Settings.valid_email_regex, "i")}
 
   has_secure_password
 

@@ -1,5 +1,4 @@
 en:
-  hello: "Hello world"
   language: "Language"
   english: "English"
   home:
@@ -30,3 +29,23 @@ en:
     title: "List Product"
     option: "Option"
     back_list: "Back to list"
+  user:
+    title:
+      create: "SIGN UP"
+      show: "SHOW USER"
+  flashes:
+    danger:
+      user_not_found: "User not found"
+      form_notification: "The form contains %{count} errors."
+      data_invalid: "Data invalid"
+      user_id_valid: "ID must be an integer."
+    success:
+      welcome: "Welcome %{user_name} to the Sample App!"
+  button:
+    create_user: "Create User"
+  signup:
+    title: "Sign up"
+    name_field: "Name"
+    email_field: "Email"
+    password_field: "Password"
+    password_confirmation_field: "Password confirmation"
