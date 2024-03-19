@@ -11,6 +11,22 @@
             <li class="dropdown-item"><%= link_to "Vietnamese", url_for(locale: "vi"), class: "dropdown-item" %></li>
           </ul>
         </li>
+        <% if logged_in? %>
+          <li class="dropdown">
+            <a href="#" id="accountDropdown" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <%= t("account") %> <b class="caret"></b>
+            </a>
+            <ul id="dropdown-menu" aria-labelledby="accountDropdown" class="dropdown-menu">
+              <li class="dropdown-item nav-link"><%= link_to "Profile", current_user %></li>
+              <li class="dropdown-item nav-link">
+                <%= link_to t("logout.title"), logout_path,
+                            data: { "turbo-method": :delete } %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to t("signin.title"), login_path, class: "nav-link" %></li>
+        <% end %>
       </ul>
     </div>
   </div>
