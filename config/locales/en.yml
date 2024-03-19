@@ -57,6 +57,7 @@ en:
     remember_me: "Remember me"
     new_user: "New user?"
     signup: "Sign up now!"
+    remember: "Remember me on this computer"
   logout:
     title: "Log out"
   account: "Account"
