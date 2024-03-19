@@ -39,6 +39,7 @@ en:
       form_notification: "The form contains %{count} errors."
       data_invalid: "Data invalid"
       user_id_valid: "ID must be an integer."
+      login_failure: "Invalid email/password combination"
     success:
       welcome: "Welcome %{user_name} to the Sample App!"
   button:
@@ -49,3 +50,13 @@ en:
     email_field: "Email"
     password_field: "Password"
     password_confirmation_field: "Password confirmation"
+  signin:
+    title: "Sign in"
+    email_field: "Email"
+    password_field: "Password"
+    remember_me: "Remember me"
+    new_user: "New user?"
+    signup: "Sign up now!"
+  logout:
+    title: "Log out"
+  account: "Account"

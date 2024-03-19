@@ -39,6 +39,7 @@ vi:
       form_notification: "Biểu mẫu chứa %{count} lỗi."
       data_invalid: "Dữ liệu không hợp lệ"
       user_id_valid: "ID phải là một số nguyên"
+      login_failure: "Email/mật khẩu không hợp lệ"
     success:
       welcome: "Chào mừng %{user_name} đến với Ứng dụng Mẫu!"
   button:
@@ -49,3 +50,13 @@ vi:
     email_field: "Email"
     password_field: "Mật khẩu"
     password_confirmation_field: "Xác nhận mật khẩu"
+  signin:
+    title: "Đăng nhập"
+    email_field: "Email"
+    password_field: "Mật khẩu"
+    remember_me: "Ghi nhớ"
+    new_user: "Người dùng mới?"
+    signup: "Đăng ký ngay!"
+  logout:
+    title: "Đăng xuất"
+  account: "Tài khoản"
