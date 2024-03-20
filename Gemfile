@@ -9,8 +9,12 @@ gem "rails", "~> 7.0.5"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
+# use faker for seed data
+gem "faker", "2.21.0"
+
 # gem bootstrap for Rails
 gem "bootstrap", "5.3.0"
+gem "pagy"
 
 # Use mysql as the database for Active Record
 gem "mysql2", "~> 0.5"

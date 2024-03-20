@@ -3,22 +3,6 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_with(model: @user) do |f| %>
-      <%= render 'shared/error_messages' %>
-
-      <%= f.label :name, t("signup.name_field") %>
-      <%= f.text_field :name, class: 'form-control' %>
-
-      <%= f.label :email, t("signup.email_field")%>
-      <%= f.email_field :email, class: 'form-control' %>
-
-      <%= f.label :password, t("signup.password_field")%>
-      <%= f.password_field :password, class: 'form-control' %>
-
-      <%= f.label :password_confirmation, t("signup.password_confirmation_field") %>
-      <%= f.password_field :password_confirmation, class: 'form-control' %>
-
-      <%= f.submit t("button.create_user"), class: "btn btn-primary" %>
-    <% end %>
+    <%= render 'form', local: t("signup.title") %>
   </div>
 </div>
