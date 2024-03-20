@@ -57,6 +57,7 @@ vi:
     remember_me: "Ghi nhớ"
     new_user: "Người dùng mới?"
     signup: "Đăng ký ngay!"
+    remember: "Ghi nhớ tôi trên máy tính này"
   logout:
     title: "Đăng xuất"
   account: "Tài khoản"
