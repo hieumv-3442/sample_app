@@ -33,6 +33,7 @@ vi:
     title:
       create: "Đăng ký"
       show: "XEM NGƯỜI DÙNG"
+      list: "Danh sách người dùng"
   flashes:
     danger:
       user_not_found: "Không tìm thấy người dùng"
@@ -40,8 +41,13 @@ vi:
       data_invalid: "Dữ liệu không hợp lệ"
       user_id_valid: "ID phải là một số nguyên"
       login_failure: "Email/mật khẩu không hợp lệ"
+      update_user: "Cập nhật người dùng thất bại"
+      not_authorized: "Không được uỷ quyền"
+      user_not_deleted: "Xoá người dùng thất bại"
     success:
       welcome: "Chào mừng %{user_name} đến với Ứng dụng Mẫu!"
+      update_user: "Cập nhật người dùng thành công"
+      user_deleted: "Xoá người dùng thành công"
   button:
     create_user: "Tạo người dùng"
   signup:
@@ -51,6 +57,7 @@ vi:
     password_field: "Mật khẩu"
     password_confirmation_field: "Xác nhận mật khẩu"
   signin:
+    request_login: "Vui lòng đăng nhập"
     title: "Đăng nhập"
     email_field: "Email"
     password_field: "Mật khẩu"
@@ -61,3 +68,12 @@ vi:
   logout:
     title: "Đăng xuất"
   account: "Tài khoản"
+  update:
+    user:
+      title: "Cập nhật thông tin"
+      button_update: "Cập nhật"
+      change_gravatar: "Chọn"
+  profile: "Hồ sơ"
+  delete:
+    title: "Xóa"
+    message: "Bạn có chắc chắn?"

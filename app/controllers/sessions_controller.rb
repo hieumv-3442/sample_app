@@ -1,17 +1,16 @@
 class SessionsController < ApplicationController
-  layout 'new-layout'
+  layout "new-layout"
 
   def new; end
 
   def create
-    user = User.find_by(email: params[:session][:email].downcase)
-    if user && user.authenticate(params[:session][:password])
-      reset_session
-      params[:session][:remember_me] == '1' ? remember(user) : forget(user)
+    user = User.find_by email: params.dig(:session, :email)&.downcase
+    if user.try :authenticate, params.dig(:session, :password)
       log_in user
-      redirect_to user
+      params.dig(:session, :remember_me) == "1" ? remember(user) : forget(user)
+      redirect_back_or user
     else
-      flash.now[:danger] = t"flashes.danger.login_failure"
+      flash.now[:danger] = t ".incorrect"
       render :new, status: :unprocessable_entity
     end
   end

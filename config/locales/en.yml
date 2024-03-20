@@ -33,6 +33,7 @@ en:
     title:
       create: "SIGN UP"
       show: "SHOW USER"
+      list: "List User"
   flashes:
     danger:
       user_not_found: "User not found"
@@ -40,8 +41,13 @@ en:
       data_invalid: "Data invalid"
       user_id_valid: "ID must be an integer."
       login_failure: "Invalid email/password combination"
+      update_user: "Update user failure"
+      not_authorized: "Not authorized"
+      user_not_deleted: "Delete user failure"
     success:
       welcome: "Welcome %{user_name} to the Sample App!"
+      update_user: "Update user success"
+      user_deleted: "Delete user success"
   button:
     create_user: "Create User"
   signup:
@@ -51,6 +57,7 @@ en:
     password_field: "Password"
     password_confirmation_field: "Password confirmation"
   signin:
+    request_login: "Please sign in"
     title: "Sign in"
     email_field: "Email"
     password_field: "Password"
@@ -61,3 +68,12 @@ en:
   logout:
     title: "Log out"
   account: "Account"
+  update:
+    user:
+      title: "Update your profile"
+      button_update: "Save changes"
+      change_gravatar: "Change"
+  profile: "Profile"
+  delete:
+    title: "Delete"
+    message: "Are you sure?"

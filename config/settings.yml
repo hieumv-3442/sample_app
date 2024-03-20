@@ -5,3 +5,5 @@ valid_email_regex: \A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z
 gravatar:
   size: 50
 valid_number_regex: \A\d+\z
+pagy:
+  page_count_10: 10
