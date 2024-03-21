@@ -100,6 +100,8 @@ GEM
     deep_merge (1.2.2)
     erubi (1.12.0)
     execjs (2.9.1)
+    faker (2.21.0)
+      i18n (>= 1.8.11, < 2)
     ffi (1.16.3)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -147,6 +149,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.16.3-x86_64-linux)
       racc (~> 1.4)
+    pagy (6.5.0)
     parallel (1.24.0)
     parser (3.3.0.5)
       ast (~> 2.4.1)
@@ -279,15 +282,17 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  bcrypt (~> 3.1.7)
+  bcrypt
   bootsnap
   bootstrap (= 5.3.0)
   capybara
   config
   debug
+  faker (= 2.21.0)
   importmap-rails
   jbuilder
   mysql2 (~> 0.5)
+  pagy
   puma (~> 5.0)
   rails (~> 7.0.5)
   rails-controller-testing

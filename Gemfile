@@ -9,8 +9,12 @@ gem "rails", "~> 7.0.5"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
+# use faker for seed data
+gem "faker", "2.21.0"
+
 # gem bootstrap for Rails
 gem "bootstrap", "5.3.0"
+gem "pagy"
 
 # Use mysql as the database for Active Record
 gem "mysql2", "~> 0.5"
@@ -19,7 +23,7 @@ gem "mysql2", "~> 0.5"
 gem "rails-i18n"
 
 # use bcrypt for password hashing
-gem 'bcrypt', '~> 3.1.7'
+gem "bcrypt"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -81,7 +85,7 @@ gem "config"
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html]
   gem "capybara"
+  gem "rails-controller-testing"
   gem "selenium-webdriver"
   gem "webdrivers"
-  gem 'rails-controller-testing'
 end

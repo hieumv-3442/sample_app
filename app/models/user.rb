@@ -1,19 +1,25 @@
 class User < ApplicationRecord
   attr_accessor :remember_token
+
   validates :name, presence: true, length: {maximum: Settings.max_length_name}
   validates :password, length: {minimum: Settings.min_length_password}
-  validates :email, presence: true, length: {maximum: Settings.max_length_email},
-            uniqueness: true,
-            format: {with: Regexp.new(Settings.valid_email_regex, "i")}
+  validates :email, presence: true,
+            length: {maximum: Settings.max_length_email},
+            format: {with: Regexp.new(Settings.valid_email_regex, "i")},
+            uniqueness: {case_sensitive: false}
 
   has_secure_password
 
   before_save :downcase_email
 
   class << self
-    def digest(string)
-      cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+    def digest string
+      cost = if ActiveModel::SecurePassword.min_cost
+               BCrypt::Engine::MIN_COST
+             else
                BCrypt::Engine.cost
+             end
+
       BCrypt::Password.create(string, cost: cost)
     end
 
@@ -32,8 +38,9 @@ class User < ApplicationRecord
     remember_digest || remember
   end
 
-  def authenticated?(remember_token)
+  def authenticated? remember_token
     return false unless remember_digest
+
     BCrypt::Password.new(remember_digest).is_password?(remember_token)
   end
 
