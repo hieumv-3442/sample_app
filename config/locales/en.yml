@@ -44,10 +44,16 @@ en:
       update_user: "Update user failure"
       not_authorized: "Not authorized"
       user_not_deleted: "Delete user failure"
+      invalid_activation: "Invalid activation link"
     success:
       welcome: "Welcome %{user_name} to the Sample App!"
       update_user: "Update user success"
       user_deleted: "Delete user success"
+      account_activated: "Account activated!"
+    info:
+      request_verify: "Please check your email to activate your account."
+    warning:
+      account_not_activated: "Your account has not been activated. Please check your email."
   button:
     create_user: "Create User"
   signup:
@@ -77,3 +83,8 @@ en:
   delete:
     title: "Delete"
     message: "Are you sure?"
+  mailers:
+    verify:
+      subject: "Account activation"
+    hi: "Hi"
+    welcome: "Welcome to the Sample App! Click on the link below to activate your account:"

@@ -6,11 +6,9 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by email: params.dig(:session, :email)&.downcase
     if user.try :authenticate, params.dig(:session, :password)
-      log_in user
-      params.dig(:session, :remember_me) == "1" ? remember(user) : forget(user)
-      redirect_back_or user
+      user_activated? user
     else
-      flash.now[:danger] = t ".incorrect"
+      flash.now[:danger] = t "flashes.danger.login_failure"
       render :new, status: :unprocessable_entity
     end
   end
