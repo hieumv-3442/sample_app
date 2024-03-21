@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_03_21_013143) do
+ActiveRecord::Schema[7.0].define(version: 2024_03_21_064913) do
   create_table "products", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -27,6 +27,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_21_013143) do
     t.boolean "admin", default: false
     t.string "activation_digest"
     t.boolean "activated", default: false
+    t.string "reset_digest"
+    t.datetime "reset_send_at"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 

@@ -13,7 +13,6 @@ class AccountActivationsController < ApplicationController
   end
 
   private
-
   def load_user_by_email
     @user = User.find_by(email: params[:email])
     return if @user

@@ -45,12 +45,17 @@ en:
       not_authorized: "Not authorized"
       user_not_deleted: "Delete user failure"
       invalid_activation: "Invalid activation link"
+      reset_password: "Invalid request"
+      password_reset_expired: "Password reset has expired."
+      password_empty: "Password can't be empty"
     success:
       welcome: "Welcome %{user_name} to the Sample App!"
       update_user: "Update user success"
       user_deleted: "Delete user success"
       account_activated: "Account activated!"
+      update_password: "Update password success"
     info:
+      reset_password: "Email sent with password reset instructions"
       request_verify: "Please check your email to activate your account."
     warning:
       account_not_activated: "Your account has not been activated. Please check your email."
@@ -79,6 +84,10 @@ en:
       title: "Update your profile"
       button_update: "Save changes"
       change_gravatar: "Change"
+      update_password: "Update password"
+      info_1: "This link will expire in two hours."
+      info_2: "If you did not request your password to be reset, please ignore this email and
+      your password will stay as it is."
   profile: "Profile"
   delete:
     title: "Delete"
@@ -86,5 +95,10 @@ en:
   mailers:
     verify:
       subject: "Account activation"
+    reset_password:
+      subject: "Reset Password"
+      message: "To reset your password click the link below:"
+    request_reset_password: "Request reset password"
     hi: "Hi"
     welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+  forgot_password: "Forgot password?"
