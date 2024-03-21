@@ -103,6 +103,8 @@ GEM
     faker (2.21.0)
       i18n (>= 1.8.11, < 2)
     ffi (1.16.3)
+    figaro (1.2.0)
+      thor (>= 0.14.0, < 2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.4)
@@ -289,6 +291,7 @@ DEPENDENCIES
   config
   debug
   faker (= 2.21.0)
+  figaro
   importmap-rails
   jbuilder
   mysql2 (~> 0.5)

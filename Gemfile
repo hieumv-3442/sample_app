@@ -16,6 +16,9 @@ gem "faker", "2.21.0"
 gem "bootstrap", "5.3.0"
 gem "pagy"
 
+# Use figaro for environment variables
+gem "figaro"
+
 # Use mysql as the database for Active Record
 gem "mysql2", "~> 0.5"
 

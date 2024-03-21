@@ -44,10 +44,16 @@ vi:
       update_user: "Cập nhật người dùng thất bại"
       not_authorized: "Không được uỷ quyền"
       user_not_deleted: "Xoá người dùng thất bại"
+      invalid_activation: "Liên kết kích hoạt không hợp lệ"
     success:
       welcome: "Chào mừng %{user_name} đến với Ứng dụng Mẫu!"
       update_user: "Cập nhật người dùng thành công"
       user_deleted: "Xoá người dùng thành công"
+      account_activated: "Tài khoản đã được kích hoạt!"
+    info:
+      request_verify: "Vui lòng kiểm tra email của bạn để xác nhận tài khoản"
+    warning:
+      account_not_activated: "Tài khoản của bạn chưa được kích hoạt. Vui lòng kiểm tra email của bạn."
   button:
     create_user: "Tạo người dùng"
   signup:
@@ -77,3 +83,8 @@ vi:
   delete:
     title: "Xóa"
     message: "Bạn có chắc chắn?"
+  mailers:
+    verify:
+      subject: "Account activation"
+    hi: "Xin chào"
+    welcome: "Chào mừng đến với Ứng dụng Mẫu! Click vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
