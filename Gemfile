@@ -12,9 +12,15 @@ gem "sprockets-rails"
 # use faker for seed data
 gem "faker", "2.21.0"
 
+# use i18n-js for Rails to translate JavaScript
+gem "i18n-js", "3.9.2"
+
 # gem bootstrap for Rails
 gem "bootstrap", "5.3.0"
 gem "pagy"
+
+# use active_storage_validations for image validation
+gem "active_storage_validations"
 
 # Use figaro for environment variables
 gem "figaro"
@@ -62,7 +68,7 @@ gem "bootsnap", require: false
 # gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html]
-# gem "image_processing", "~> 1.2"
+gem "image_processing"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html

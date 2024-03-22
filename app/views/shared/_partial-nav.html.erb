@@ -17,6 +17,7 @@
               <%= t("account") %> <b class="caret"></b>
             </a>
             <ul id="dropdown-menu" aria-labelledby="accountDropdown" class="dropdown-menu">
+              <li class="dropdown-item nav-link"><%= link_to t("home.title"), root_path %></li>
               <li class="dropdown-item nav-link"><%= link_to t("profile"), current_user %></li>
               <li class="dropdown-item nav-link"><%= link_to t("user.title.list"), users_path %></li>
               <li class="dropdown-item nav-link"><%= link_to t("update.user.title"), edit_user_path(current_user) %></li>

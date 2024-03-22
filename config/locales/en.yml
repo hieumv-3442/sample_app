@@ -48,12 +48,15 @@ en:
       reset_password: "Invalid request"
       password_reset_expired: "Password reset has expired."
       password_empty: "Password can't be empty"
+      delete_micropost: "Delete micropost failure"
     success:
       welcome: "Welcome %{user_name} to the Sample App!"
       update_user: "Update user success"
       user_deleted: "Delete user success"
       account_activated: "Account activated!"
       update_password: "Update password success"
+      created_micropost: "Micropost created!"
+      delete_micropost: "Micropost deleted!"
     info:
       reset_password: "Email sent with password reset instructions"
       request_verify: "Please check your email to activate your account."
@@ -102,3 +105,18 @@ en:
     hi: "Hi"
     welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
   forgot_password: "Forgot password?"
+  micropost:
+    title: "Micropost"
+    posted: "Posted"
+    ago: "ago"
+    input_content: "Input here..."
+    button_post: "Post"
+    count: "Micropost count %{count}"
+    view_profile: "View profile"
+    delete:
+      title: "Delete"
+      confirm: "Are you sure you want to delete this micropost?"
+    errors:
+      alert_max_size: "Maximum file size is 5MB. Please choose a smaller file."
+      content_type: "Invalid image content type"
+      image_size: "Image size too large"
