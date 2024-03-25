@@ -34,6 +34,12 @@ en:
       create: "SIGN UP"
       show: "SHOW USER"
       list: "List User"
+      following: "Users Following"
+      follower: "Users Follower"
+    action:
+      follow: "Follow"
+      unfollow: "Unfollow"
+      view_profile: "View Profile"
   flashes:
     danger:
       user_not_found: "User not found"
@@ -49,6 +55,7 @@ en:
       password_reset_expired: "Password reset has expired."
       password_empty: "Password can't be empty"
       delete_micropost: "Delete micropost failure"
+      micropost_not_found: "Micropost not found"
     success:
       welcome: "Welcome %{user_name} to the Sample App!"
       update_user: "Update user success"

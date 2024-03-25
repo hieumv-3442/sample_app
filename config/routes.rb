@@ -10,7 +10,11 @@ Rails.application.routes.draw do
     get "static_pages/home"
     get "static_pages/help"
 
-    resources :users
+    resources :users do
+      member do
+        get :following, :followers
+      end
+    end
     get "/signup", to: "users#new"
 
     get "/login", to: "sessions#new"
@@ -22,5 +26,7 @@ Rails.application.routes.draw do
     resources :password_resets, except: %i(index destroy show)
 
     resources :microposts, only: %i(create destroy)
+
+    resources :relationships, only: %i(create destroy)
   end
 end
