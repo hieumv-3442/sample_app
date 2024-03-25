@@ -48,12 +48,15 @@ vi:
       reset_password: "Yêu cầu không hợp lệ"
       password_reset_expired: "Yêu cầu đặt lại mật khẩu đã hết hạn."
       password_empty: "Mật khẩu không thể để trống"
+      delete_micropost: "Xoá bài viết thất bại"
     success:
       welcome: "Chào mừng %{user_name} đến với Ứng dụng Mẫu!"
       update_user: "Cập nhật người dùng thành công"
       user_deleted: "Xoá người dùng thành công"
       account_activated: "Tài khoản đã được kích hoạt!"
       update_password: "Cập nhật mật khẩu thành công"
+      created_micropost: "Tạo bài viết thành công!"
+      delete_micropost: "Xoá bài viết thành công!"
     info:
       reset_password: "Email đã được gửi với hướng dẫn đặt lại mật khẩu"
       request_verify: "Vui lòng kiểm tra email của bạn để xác nhận tài khoản"
@@ -102,3 +105,18 @@ vi:
     hi: "Xin chào"
     welcome: "Chào mừng đến với Ứng dụng Mẫu! Click vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
   forgot_password: "Quên mật khẩu?"
+  micropost:
+    title: "Bài viết"
+    posted: "Đã đăng"
+    ago: "trước"
+    input_content: "Nhập nội dung ở đây..."
+    button_post: "Đăng"
+    count: "Số lượng bài viết %{count}"
+    view_profile: "Xem hồ sơ"
+    delete:
+      title: "Xóa"
+      confirm: "Bạn có chắc chắn muốn xóa bài viết này?"
+    errors:
+      alert_max_size: "Dung lượng tệp tối đa là 5MB. Vui lòng chọn tệp nhỏ hơn."
+      content_type: "Loại tệp hình ảnh không hợp lệ"
+      image_size: "Dung lượng ảnh không được vượt quá 5MB"

@@ -7,3 +7,12 @@ gravatar:
 valid_number_regex: \A\d+\z
 pagy:
   page_count_10: 10
+digits:
+  digit_140: 140
+link:
+  rails_home: http://www.railstutorial.org/
+image:
+  max_size: 5
+  content_type: <%= %w(image/jpeg image/gif image/png) %>
+  resize_to_limit: [200, 100]
+  valid: image/jpeg,image/gif,image/png

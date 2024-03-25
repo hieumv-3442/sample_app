@@ -13,7 +13,9 @@ class UsersController < ApplicationController
     @pagy, @users = pagy(User.all, items: Settings.pagy.page_count_10)
   end
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy @user.feed, items: Settings.pagy.page_count_10
+  end
 
   def edit; end
 
