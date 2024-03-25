@@ -7,6 +7,14 @@ module UsersHelper
     image_tag gravatar_url, alt: user.name, class: "gravatar"
   end
 
+  def current_relationship user
+    current_user.active_relationships.find_by(followed_id: user.id)
+  end
+
+  def new_active_relationship
+    current_user.active_relationships.build
+  end
+
   def can_delete_user? user
     current_user.admin && !current_user?(user)
   end

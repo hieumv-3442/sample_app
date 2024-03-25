@@ -34,6 +34,12 @@ vi:
       create: "Đăng ký"
       show: "XEM NGƯỜI DÙNG"
       list: "Danh sách người dùng"
+      following: "Đang theo dõi"
+      follower: "Người theo dõi"
+    action:
+      follow: "Theo dõi"
+      unfollow: "Bỏ theo dõi"
+      view_profile: "Xem hồ sơ"
   flashes:
     danger:
       user_not_found: "Không tìm thấy người dùng"
@@ -49,6 +55,7 @@ vi:
       password_reset_expired: "Yêu cầu đặt lại mật khẩu đã hết hạn."
       password_empty: "Mật khẩu không thể để trống"
       delete_micropost: "Xoá bài viết thất bại"
+      micropost_not_found: "Không tìm thấy bài viết"
     success:
       welcome: "Chào mừng %{user_name} đến với Ứng dụng Mẫu!"
       update_user: "Cập nhật người dùng thành công"
